@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/demo/dayside-master
+RewriteCond %{REQUEST_URI} !^/demo/index.php
+RewriteCond %{REQUEST_URI} !^/demo/node_modules
+RewriteCond %{REQUEST_URI} !^/demo/css
+RewriteCond %{REQUEST_URI} !^/demo/js
+RewriteCond %{REQUEST_URI} !^/demo/downloads
+RewriteRule (.*) /demo/index.php?route=$1 [L]
