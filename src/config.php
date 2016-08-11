@@ -15,6 +15,6 @@ $routes = [
 ];
 
 $user = 'root';
-$password = 'qweqwe';
+$password = 'password';
 $host = 'localhost';
 $db = 'demo';
